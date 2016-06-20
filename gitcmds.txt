@@ -1,0 +1,205 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\Okello>cd Desktop
+
+C:\Users\Okello\Desktop>cd git-repos
+
+C:\Users\Okello\Desktop\git-repos>git clone https://github.com/Dandikairo/dokell
+o
+Cloning into 'dokello'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+C:\Users\Okello\Desktop\git-repos>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Okello\Desktop\git-repos>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 9480-80A4
+
+ Directory of C:\Users\Okello\Desktop\git-repos
+
+11-Jun-16  15:44    <DIR>          .
+11-Jun-16  15:44    <DIR>          ..
+11-Jun-16  12:48    <DIR>          commons
+11-Jun-16  15:44    <DIR>          dokello
+11-Jun-16  14:00    <DIR>          sales
+11-Jun-16  14:59    <DIR>          sales-desktop
+               0 File(s)              0 bytes
+               6 Dir(s)  54,672,773,120 bytes free
+
+C:\Users\Okello\Desktop\git-repos>cd dokello
+
+C:\Users\Okello\Desktop\git-repos\dokello>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 9480-80A4
+
+ Directory of C:\Users\Okello\Desktop\git-repos\dokello
+
+11-Jun-16  15:44    <DIR>          .
+11-Jun-16  15:44    <DIR>          ..
+11-Jun-16  15:44                 9 README.md
+               1 File(s)              9 bytes
+               2 Dir(s)  54,672,773,120 bytes free
+
+C:\Users\Okello\Desktop\git-repos\dokello>notepad README
+
+C:\Users\Okello\Desktop\git-repos\dokello>Notepad README.md
+
+C:\Users\Okello\Desktop\git-repos\dokello>git remote commit -a -m"added on dokel
+lo"
+error: Unknown subcommand: commit
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--m
+irror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)..
+.]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\Users\Okello\Desktop\git-repos\dokello>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Okello\Desktop\git-repos\dokello>git add README.md
+
+C:\Users\Okello\Desktop\git-repos\dokello>git commit -m "added  simple text on r
+eadme.md file"
+[master de381ef] added  simple text on readme.md file
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Okello\Desktop\git-repos\dokello>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+C:\Users\Okello\Desktop\git-repos\dokello>git log
+commit de381ef2e7dd2ef7015ba7d33901e20f9989a098
+Author: Okello Dan <dokello@adroitltd.com>
+Date:   Sat Jun 11 15:49:51 2016 +0300
+
+    added  simple text on readme.md file
+
+commit 521835545843cc31c922eb8b15a8102918cba6c1
+Author: Dandikairo <dokello@adroitltd.com>
+Date:   Sat Jun 11 13:36:39 2016 +0300
+
+    Initial commit
+
+C:\Users\Okello\Desktop\git-repos\dokello>git remote add origin https://github.c
+om/Dandikairo/dokello.git
+fatal: remote origin already exists.
+
+C:\Users\Okello\Desktop\git-repos\dokello>git push -u origin master
+Username for 'https://github.com': Dandikairo
+Password for 'https://Dandikairo@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Dandikairo/dokello
+   5218355..de381ef  master -> master
+Branch master set up to track remote branch master from origin.
+
+C:\Users\Okello\Desktop\git-repos\dokello>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 9480-80A4
+
+ Directory of C:\Users\Okello\Desktop\git-repos\dokello
+
+11-Jun-16  15:44    <DIR>          .
+11-Jun-16  15:44    <DIR>          ..
+11-Jun-16  15:46                56 README.md
+               1 File(s)             56 bytes
+               2 Dir(s)  54,676,447,232 bytes free
+
+C:\Users\Okello\Desktop\git-repos\dokello>notepad readme.md
+
+C:\Users\Okello\Desktop\git-repos\dokello>git remote add origin https://github.c
+om/Dandikairo/dokello.git
+fatal: remote origin already exists.
+
+C:\Users\Okello\Desktop\git-repos\dokello>git push -u origin master
+Username for 'https://github.com': Dandikairo
+Password for 'https://Dandikairo@github.com':
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+C:\Users\Okello\Desktop\git-repos\dokello>notepad readme.md
+
+C:\Users\Okello\Desktop\git-repos\dokello>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Okello\Desktop\git-repos\dokello>git commit -a -m"update the sms"
+[master 9d5d1ac] update the sms
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\Okello\Desktop\git-repos\dokello>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+C:\Users\Okello\Desktop\git-repos\dokello>git push -u origin master
+Username for 'https://github.com': Dandikairo
+Password for 'https://Dandikairo@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 324 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Dandikairo/dokello
+   de381ef..9d5d1ac  master -> master
+Branch master set up to track remote branch master from origin.
+
+C:\Users\Okello\Desktop\git-repos\dokello>git log
+commit 9d5d1ac9a2083ca0b98e6723a5ba366ba437de45
+Author: Okello Dan <dokello@adroitltd.com>
+Date:   Sat Jun 11 16:03:49 2016 +0300
+
+    update the sms
+
+commit de381ef2e7dd2ef7015ba7d33901e20f9989a098
+Author: Okello Dan <dokello@adroitltd.com>
+Date:   Sat Jun 11 15:49:51 2016 +0300
+
+    added  simple text on readme.md file
+
+commit 521835545843cc31c922eb8b15a8102918cba6c1
+Author: Dandikairo <dokello@adroitltd.com>
+Date:   Sat Jun 11 13:36:39 2016 +0300
+
+    Initial commit
+
+C:\Users\Okello\Desktop\git-repos\dokello>
